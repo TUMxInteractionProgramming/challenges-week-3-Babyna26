@@ -30,6 +30,9 @@ button, strong {
 h1 {
     background-color: #3F51B5;
     color: white;
+    height: 56px;
+    
+
 }
 
 
@@ -62,6 +65,7 @@ li.selected {
 li img {
     /* #4 #middle vertical alignment of icons in the #channels list */
     vertical-align: middle;
+    right: 0;
 }
 
 /* TAB BAR */
@@ -72,6 +76,11 @@ li img {
     background-color: white;
     /* #3 #tab-bar #container has all buttons centered */
     text-align: center;
+    display: flex;
+    /*buttons are distributed equally*/
+    justify-content: space-between;
+    align-items: flex-end;
+    bottom:0;
 }
 
 /* #4 add styles to #tab-bar #buttons */
@@ -143,3 +152,20 @@ li img {
     margin-left: 17.5%;
 }
 
+#channel-area{
+position: absolute;
+height: 100%;
+width: 40%;
+left:0;
+}
+
+#chat-area{
+    position: absolute;
+    height:100%;
+    width:60%;
+    right:0;
+
+}
+h1 img{
+        left:10px;
+}
